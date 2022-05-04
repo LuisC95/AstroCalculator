@@ -1,0 +1,413 @@
+html
+{
+  width: 100%;
+  height: 100%;
+}
+body
+{
+  min-width: 100vh;
+  min-height: 100vh;
+  margin: 0%;
+  padding: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #224042;
+  color: white;
+}
+.firstTitle
+{
+  font-family: "coolvetica";
+  src: url("../fonts/Coolvetica Rg.otf" format("truetype"));
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25pt;
+  background: linear-gradient(to right, #177780, #2decfe);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider
+{
+  height: 5px;
+  width: 100%;
+  -webkit-appearance: none;
+  background: #224042;
+}
+
+/*progress support*/
+input[type=range].styled-slider.slider-progress
+{
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 20px + var(--ratio) * (100% - 20px));
+}
+
+input[type=range].styled-slider:focus
+{
+  outline: none;
+}
+
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb
+{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 1em;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 0 0 4px #224042;
+  margin-top: calc(10px * 0.5 - 20px * 0.5);
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track
+{
+  height: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #224042;
+  box-shadow: inset 1px 1px 2px #0e1a1a,inset -1px -1px 2px #36666a;
+  box-shadow: none;
+}
+
+input[type=range].styled-slider::-webkit-slider-thumb:hover
+{
+  background: #ffffff;
+}
+
+input[type=range].styled-slider:hover::-webkit-slider-runnable-track
+{
+  background: #224042;
+}
+
+input[type=range].styled-slider::-webkit-slider-thumb:active
+{
+  background: linear-gradient(to right, #177780 , #2DECFE);
+}
+
+input[type=range].styled-slider:active::-webkit-slider-runnable-track
+{
+  background: #224042;
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track
+{
+  background: linear-gradient(to right, #177780 , #2DECFE) 0/var(--sx) 100% no-repeat, #224042; box-shadow: inset 1px 1px 2px #0e1a1a,inset -1px -1px 2px #36666a;;
+}
+
+input[type=range].styled-slider.slider-progress:hover::-webkit-slider-runnable-track
+{
+  background: linear-gradient(to right, #177780 , #2DECFE) 0/var(--sx) 100% no-repeat, #224042;
+}
+
+input[type=range].styled-slider.slider-progress:active::-webkit-slider-runnable-track
+{
+  background: linear-gradient(to right, #177780 , #2DECFE) 0/var(--sx) 100% no-repeat, #224042;
+}
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb
+{
+  width: 20px;
+  height: 20px;
+  border-radius: 1em;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 0 0 4px #224042;
+}
+
+input[type=range].styled-slider::-moz-range-track
+{
+  height: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #224042; box-shadow: inset 1px 1px 2px #0e1a1a,inset -1px -1px 2px #36666a;;
+  box-shadow: none;
+}
+
+input[type=range].styled-slider::-moz-range-thumb:hover
+{
+  background: #ffffff;
+}
+
+input[type=range].styled-slider:hover::-moz-range-track
+{
+  background: #224042;
+}
+
+input[type=range].styled-slider::-moz-range-thumb:active
+{
+  background: linear-gradient(to right, #177780 , #2DECFE);
+}
+
+input[type=range].styled-slider:active::-moz-range-track
+{
+  background: #224042;
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track
+{
+  background: linear-gradient(to right, #177780 , #2DECFE) 0/var(--sx) 100% no-repeat, #224042; box-shadow: inset 1px 1px 2px #0e1a1a,inset -1px -1px 2px #36666a;;
+}
+
+input[type=range].styled-slider.slider-progress:hover::-moz-range-track
+{
+  background: linear-gradient(to right, #177780 , #2DECFE) 0/var(--sx) 100% no-repeat, #224042;
+}
+
+input[type=range].styled-slider.slider-progress:active::-moz-range-track
+{
+  background: linear-gradient(to right, #177780 , #2DECFE) 0/var(--sx) 100% no-repeat, #224042;
+}
+
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper
+{
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-fill-lower
+{
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-thumb
+{
+  width: 20px;
+  height: 20px;
+  border-radius: 1em;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 0 0 4px #224042;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-track
+{
+  height: 10px;
+  border-radius: 10px;
+  background: #224042; box-shadow: inset 1px 1px 2px #0e1a1a,inset -1px -1px 2px #36666a;;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-thumb:hover
+{
+  background: #ffffff;
+}
+
+input[type=range].styled-slider:hover::-ms-track
+{
+  background: #224042;
+}
+
+input[type=range].styled-slider::-ms-thumb:active
+{
+  background: linear-gradient(to right, #177780 , #2DECFE);
+}
+
+input[type=range].styled-slider:active::-ms-track
+{
+  background: #224042;
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower
+{
+  height: 10px;
+  border-radius: 10px 0 0 10px;
+  margin: -undefined 0 -undefined -undefined;
+  background: linear-gradient(to right, #177780 , #2DECFE);
+  border: none;
+  border-right-width: 0;
+}
+
+input[type=range].styled-slider.slider-progress:hover::-ms-fill-lower
+{
+  background: linear-gradient(to right, #177780 , #2DECFE);
+}
+
+input[type=range].styled-slider.slider-progress:active::-ms-fill-lower
+{
+  background: linear-gradient(to right, #177780 , #2DECFE);
+}
+#travelSystem
+{
+  font-family: "Gill Sans";
+  src: url("../fonts/Gill Sans.otf" format("truetype"));
+  font-weight: normal;
+  font-style: normal;
+  font-size:18px;
+  color: white;
+}
+#showResult
+{
+  background: #224042;
+  font-family: "coolvetica";
+  src: url("../fonts/Coolvetica Rg.otf" format("truetype"));
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18pt;
+  background: linear-gradient(to right, #177780, #2decfe);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#weigthNumber
+{
+  text-align: center;
+  height: 20px;
+}
+
+#buttonDiv
+{
+  width: 100%;
+  text-align: center;
+}
+.mercuryDiv, .venusDiv, .marsDiv, .jupiterDiv, .saturnDiv, .uranusDiv, .neptuneDiv
+{
+  float: left;
+  width: 14.28%;
+  height: 25vh;
+  text-align: center;
+  position: relative;
+}
+
+input[type=radio]
+{
+  height: 20vh;
+  width: 20vh;
+  border: none;
+  opacity: 0;
+}
+
+.mercuryImage, .venusImage, .marsImage, .jupiterImage, .neptuneImage
+{
+  background-image: url("images/planetImage3.png");
+  background-size: 55%, 55%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+}
+.saturnImage, .uranusImage
+{
+  background-image: url("images/planetImage4.png");
+  background-size: 70%, 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+}
+.mercuryImage:focus-within, .venusImage:focus-within, .marsImage:focus-within, .jupiterImage:focus-within, .neptuneImage:focus-within
+{
+  background-image: url("images/planetImage1.png");
+  background-size: 55%, 55%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+}
+
+.saturnImage:focus-within, .uranusImage:focus-within
+{
+  background-image: url("images/planetImage2.png");
+  background-size: 70%, 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+}
+
+.mercurySet, .venusSet, .marsSet, .jupiterSet, .saturnSet, .uranusSet, .neptuneSet
+{
+  background:  #224042;
+  box-shadow:  12px 12px 25px #182d2f,
+             -12px -12px 25px #2c5355;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  text-align: center;
+  margin-left: 3.21vh;
+}
+
+.mercurySet:focus-within, .venusSet:focus-within, .marsSet:focus-within, .jupiterSet:focus-within, .saturnSet:focus-within, .uranusSet:focus-within, .neptuneSet:focus-within
+{
+  background: #224042;
+  box-shadow: inset 12px 12px 25px #1d3638,
+            inset -12px -12px 25px #274a4c;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  text-align: center;
+  margin-left: 3.21vh;
+}
+
+#ready
+{
+  background: #224042;
+  font-family: "coolvetica";
+  src: url("../fonts/Coolvetica Rg.otf" format("truetype"));
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18pt;
+  text-align: center;
+  margin-top: 6vh;
+  border-radius: 92px;
+  width: 33vh;
+  height: 11vh;
+  border: none;
+  outline: none;
+  box-shadow:  20px 20px 60px #0e1a1a,
+             -20px -20px 60px #36666a;
+  background: linear-gradient(to right, #177780, #2decfe);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#ready:active
+{
+  background: #224042;
+  box-shadow:  inset 20px 20px 60px #0e1a1a,
+              inset -20px -20px 60px #36666a;
+  color: #0e1a1a;
+}
+.resultsAndInfo
+{
+  width: 100%;
+  height: 25vh;
+  margin-top: 6vh;
+}
+.imagePlanet
+{
+  width: 27.9%;
+  height: 100%;
+  border-radius: 30px;
+  margin-right: 6vh;
+  float: left;
+  box-shadow:  20px 20px 60px #0e1a1a,
+              -20px -20px 60px #36666a;
+  background-size: 100%, 100%;
+  object-fit: contain;
+  text-align: center;
+  background-position: center;
+}
+#infoPlanet
+{
+  font-family: "Gill Sans";
+  src: url("../fonts/Gill Sans.otf" format("truetype"));
+  font-weight: normal;
+  font-style: normal;
+  font-size:15pt;
+  height: auto;
+}

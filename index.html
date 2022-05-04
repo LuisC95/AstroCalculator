@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    </style>
+    <title>how heavy you are in another planet?</title>
+  </head>
+  <body>
+    <h1 class="firstTitle">choose your weigth and Planet<h1>
+    <form id="travelSystem" action="index.html" method="post">
+      <input type="range" id="earthWeight" min="0" max="500" step="1" class="styled-slider slider-progress" value="0">
+      <br>
+      <div id="weigthNumber">
+      </div>
+      <br>
+      <div class="planetsDiv">
+        <div class="mercuryDiv">
+          <div class="mercurySet">
+            <div class="mercuryImage">
+              <input type="radio" name="Mercury" value="1" id="mercuryInput">
+              <br>
+              <label for="">Mercury </label>
+            </div>
+          </div>
+        </div>
+        <div class="venusDiv">
+          <div class="venusSet">
+            <div class="venusImage">
+              <input type="radio" name="Venus" value="2" id="venusInput">
+              <br>
+              <label for="">Venus</label>
+            </div>
+          </div>
+        </div>
+        <div class="marsDiv">
+          <div class="marsSet">
+            <div class="marsImage">
+              <input type="radio" name="mars" value="3" id="marsInput">
+              <br>
+              <label for="">Mars</label>
+            </div>
+          </div>
+        </div>
+        <div class="jupiterDiv">
+          <div class="jupiterSet">
+            <div class="jupiterImage">
+              <input type="radio" name="jupiter" value="4" id="jupiterInput">
+              <br>
+              <label for="">Jupiter</label>
+            </div>
+          </div>
+        </div>
+        <div class="saturnDiv">
+          <div class="saturnSet">
+            <div class="saturnImage">
+              <input type="radio" name="Saturn" value="5" id="saturnInput">
+              <br>
+              <label for="">Saturn </label>
+            </div>
+          </div>
+        </div>
+        <div class="uranusDiv">
+          <div class="uranusSet">
+            <div class="uranusImage">
+              <input type="radio" name="Uranus" value="6" id="uranusInput">
+              <br>
+              <label for="">Uranus </label>
+            </div>
+          </div>
+        </div>
+        <div class="neptuneDiv">
+          <div class="neptuneSet">
+            <div class="neptuneImage">
+              <input type="radio" name="Neptune" value="7" id="neptuneInput">
+              <br>
+              <label for="">Neptune</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </form>
+    <div id="buttonDiv">
+      <input type="button" name="listo" value="Let's Start!" id='ready'>
+    </div>
+    <div class="resultsAndInfo" id="resultsAndInfo">
+      <div class="imagePlanet" id="imagePlanet">
+      </div>
+      <p id="infoPlanet"></p>
+      <p id="showResult"></p>
+    </div>
+  </body>
+  <script type="text/javascript" src="scripts.js">
+  </script>
+</html>
