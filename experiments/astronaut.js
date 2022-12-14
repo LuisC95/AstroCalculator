@@ -1,0 +1,4 @@
+function Astronaut()
+{
+    this.weight;
+}
