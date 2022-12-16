@@ -1,8 +1,10 @@
-function Planet()
+class Planet
 {
-    this.name; 
-    this.image; 
-    this.gravity;
-    this.distance;
-    
+    constructor()
+    {
+        this.name; 
+        this.image; 
+        this.gravity;
+        this.distance;
+    }  
 }

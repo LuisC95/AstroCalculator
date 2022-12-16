@@ -1,3 +1,4 @@
-function Operation()
+class Operation
 {
+
 }

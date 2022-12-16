@@ -1,4 +1,7 @@
-function Astronaut()
+class Astronaut
 {
-    this.weight;
+    constructor()
+    {
+        this.weight;
+    }
 }
