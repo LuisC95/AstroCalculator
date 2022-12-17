@@ -1,7 +1,8 @@
 class Astronaut
 {
-    constructor()
+    constructor(weight, selection)
     {
-        this.weight;
+        this.weight = weight;
+        this.selection = selection;
     }
 }

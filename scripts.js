@@ -11,7 +11,7 @@ var gravityNeptune = 11.15;
 
 // This arrays save the planet's data for showing up on screen
 var infoPlanetScreen = [];
-var infoMercury = ["Mercury", "3.8 m/s²", "35.98 million miles", "58d 15h 30m", "url(images/Mercury.jpg)"]
+var infoMercury = ["Mercury", "3.7 m/s²", "35.98 million miles", "58d 15h 30m", "url(images/Mercury.jpg)"]
 var infoVenus = ["Venus", "8.87 m/s²", "67.24 million miles", "116d 18h 0m", "url(images/Venus.jpg)"]
 var infoMars = ["Mars", "3.7 m/s²", "141.6 million miles", "1d 0h 37m", "url(images/Mars.jpg)"]
 var infoJupiter = ["Jupiter", "24.8 m/s²", "483.8 million miles", "0d 9h 56m", "url(images/Jupiter.jpg)"]
