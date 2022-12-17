@@ -5,5 +5,6 @@ var jupiter = new Planet("Jupiter", "url(images/jupiter.jpg)", 24.8, "483.8 mill
 var saturn = new Planet("Saturn", "url(images/saturn.jpg)", 10.44, "890.8 million miles", "0d 10h 42m");
 var uranus = new Planet("Uranus", "url(images/uranus.jpg)", 24.8, "1.784 million miles", "0d 17h 14m");
 var neptune = new Planet("Neptune", "url(images/neptune.jpg)", 11.15, "2.793 million miles", "0d 16h 6m");
+var earth = new Planet(null, null, 9.8, null, null);
 
-jupiter.dataPlanet();
+earth.dataPlanet();
