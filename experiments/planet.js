@@ -12,7 +12,7 @@ class Planet
     dataPlanet()
     {
         console.log(this.name);
-        console.log(this.gravity);
+        console.log(this.gravity + " m/s²");
         console.log(this.distance);
     }
 }
