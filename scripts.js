@@ -1,3 +1,13 @@
+const mercury = new Planet("Mercury", "url(images/Mercury.jpg)", 3.7, "35.98 million miles", "58d 15h 30m", "mercuryInput");
+const venus = new Planet("Venus", "url(images/venus.jpg)", 8.87, "67.24 million miles", "116d 18h 0m", "venusInput");
+const mars = new Planet("Mars", "url(images/mars.jpg)", 3.7, "141.6 million miles", "1d 0h 37m", "marsInput");
+const jupiter = new Planet("Jupiter", "url(images/jupiter.jpg)", 24.8, "483.8 million miles", "0d 9h 56m", "jupiterInput");
+const saturn = new Planet("Saturn", "url(images/saturn.jpg)", 10.44, "890.8 million miles", "0d 10h 42m", "saturnInput");
+const uranus = new Planet("Uranus", "url(images/uranus.jpg)", 24.8, "1.784 million miles", "0d 17h 14m", "uranusInput");
+const neptune = new Planet("Neptune", "url(images/neptune.jpg)", 11.15, "2.793 million miles", "0d 16h 6m", "neptuneInput");
+const earth = new Planet(null, null, 9.8, null, null);
+
+
 //Gravity of planets
 
 var gravityMercury = 3.7;
@@ -178,56 +188,56 @@ function traveling()
   //and shows on screen while get active the other functions created before
   switch (planet) {
     case "Mercury":
-            weigthResult = weigthMercury;
-            gravity = gravityMercury;
+            weigthResult = mercury.weigth;
+            gravity = mercury.gravity;
             infoPlanetScreen = infoMercury;
             info();
             operation();
             views();
       break;
       case "Venus":
-              weigthResult = weigthVenus;
-              gravity = gravityVenus;
+              weigthResult = venus.weigth;
+              gravity = venus.gravity;
               infoPlanetScreen = infoVenus;
               info();
               operation();
               views();
       break;
       case "Mars":
-              weigthResult = weigthMars;
-              gravity = gravityMars;
+              weigthResult = mars.weigth;
+              gravity = mars.gravity;
               infoPlanetScreen = infoMars;
               info();
               operation();
               views();
       break;
       case "Jupiter":
-              weigthResult = weigthJupiter;
-              gravity = gravityJupiter;
+              weigthResult = jupiter.weigth;
+              gravity = jupiter.gravity;
               infoPlanetScreen = infoJupiter;
               info();
               operation();
               views();
       break;
       case "Saturn":
-              weigthResult = weigthSaturn;
-              gravity = gravitySaturn;
+              weigthResult = saturn.weigth;
+              gravity = saturn.gravity;
               infoPlanetScreen = infoSaturn;
               info();
               operation();
               views();
       break;
       case "Uranus":
-              weigthResult = weigthUranus;
-              gravity = gravityUranus;
+              weigthResult = uranus.weigth;
+              gravity = uranus.gravity;
               infoPlanetScreen = infoUranus;
               info();
               operation();
               views();
       break;
       case "Neptune":
-              weigthResult = weigthNeptune;
-              gravity = gravityNeptune;
+              weigthResult = neptune.weigth;
+              gravity = neptune.gravity;
               infoPlanetScreen = infoNeptune;
               info();
               operation();
