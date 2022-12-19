@@ -1,4 +1,8 @@
 class Operation
 {
+    constructor()
+    {
+        
+    }
 
 }

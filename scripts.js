@@ -1,33 +1,12 @@
 const mercury = new Planet("Mercury", "url(images/Mercury.jpg)", 3.7, "35.98 million miles", "58d 15h 30m", "mercuryInput");
-const venus = new Planet("Venus", "url(images/venus.jpg)", 8.87, "67.24 million miles", "116d 18h 0m", "venusInput");
-const mars = new Planet("Mars", "url(images/mars.jpg)", 3.7, "141.6 million miles", "1d 0h 37m", "marsInput");
-const jupiter = new Planet("Jupiter", "url(images/jupiter.jpg)", 24.8, "483.8 million miles", "0d 9h 56m", "jupiterInput");
-const saturn = new Planet("Saturn", "url(images/saturn.jpg)", 10.44, "890.8 million miles", "0d 10h 42m", "saturnInput");
-const uranus = new Planet("Uranus", "url(images/uranus.jpg)", 24.8, "1.784 million miles", "0d 17h 14m", "uranusInput");
-const neptune = new Planet("Neptune", "url(images/neptune.jpg)", 11.15, "2.793 million miles", "0d 16h 6m", "neptuneInput");
+const venus = new Planet("Venus", "url(images/Venus.jpg)", 8.87, "67.24 million miles", "116d 18h 0m", "venusInput");
+const mars = new Planet("Mars", "url(images/Mars.jpg)", 3.7, "141.6 million miles", "1d 0h 37m", "marsInput");
+const jupiter = new Planet("Jupiter", "url(images/Jupiter.jpg)", 24.8, "483.8 million miles", "0d 9h 56m", "jupiterInput");
+const saturn = new Planet("Saturn", "url(images/Saturn.jpg)", 10.44, "890.8 million miles", "0d 10h 42m", "saturnInput");
+const uranus = new Planet("Uranus", "url(images/Uranus.jpg)", 24.8, "1.784 million miles", "0d 17h 14m", "uranusInput");
+const neptune = new Planet("Neptune", "url(images/Neptune.jpg)", 11.15, "2.793 million miles", "0d 16h 6m", "neptuneInput");
 const earth = new Planet(null, null, 9.8, null, null);
 
-
-//Gravity of planets
-
-var gravityMercury = 3.7;
-var gravityVenus = 8.87;
-var gravityEarth = 9.8;
-var gravityMars = 3.7;
-var gravityJupiter = 24.8;
-var gravitySaturn = 10.44;
-var gravityUranus = 8.87;
-var gravityNeptune = 11.15;
-
-// This arrays save the planet's data for showing up on screen
-var infoPlanetScreen = [];
-var infoMercury = ["Mercury", "3.7 m/s²", "35.98 million miles", "58d 15h 30m", "url(images/Mercury.jpg)"]
-var infoVenus = ["Venus", "8.87 m/s²", "67.24 million miles", "116d 18h 0m", "url(images/Venus.jpg)"]
-var infoMars = ["Mars", "3.7 m/s²", "141.6 million miles", "1d 0h 37m", "url(images/Mars.jpg)"]
-var infoJupiter = ["Jupiter", "24.8 m/s²", "483.8 million miles", "0d 9h 56m", "url(images/Jupiter.jpg)"]
-var infoSaturn = ["Saturn", "10.44 m/s²", "890.8 million miles", "0d 10h 42m", "url(images/Saturn.jpg)"]
-var infoUranus = ["Uranus", "24.8 m/s²", "1.784 million miles", "0d 17h 14m", "url(images/Uranus.jpg)"]
-var infoNeptune = ["Neptune", "11.15 m/s²", "2.793 million miles", "0d 16h 6m", "url(images/Neptune.jpg)"]
 
 var weigthMercury;
 var weigthVenus;
@@ -162,25 +141,14 @@ function checkNeptune()
 }
 
 function operation()
-{
+{ 
   // this function makes the numeric operation of user's weigth with planet's gravity choosed and shows the result on screen
 
-  weigthResult = parseInt((weigthEarth * gravity) / gravityEarth);
+  weigthResult = parseInt((weigthEarth * gravity) / earth.gravity);
   result.textContent = "your weigth on " + planet + " is: " + weigthResult + " lb.";
   showResult.appendChild(result);
 }
 
-function info() //this function use the created arrays before to show data about planets choosed
-{
-  information.textContent = "Planet: " + infoPlanetScreen[0] + "\\n" + "Gravity: " + infoPlanetScreen[1] + "\\n" + "Distance from Sun: " + infoPlanetScreen[2] + "\\n" + "Day length: " + infoPlanetScreen[3] + "\\n";
-  infoPlanet.appendChild(information);
-  information.innerHTML = information.innerHTML.replace(/\\n/g, '<br />');
-}
-
-function views() // this function shows pictures of planets choosed on screen
-{
-  planetView.style.backgroundImage = infoPlanetScreen[4];
-}
 
 function traveling()
 {
@@ -190,58 +158,44 @@ function traveling()
     case "Mercury":
             weigthResult = mercury.weigth;
             gravity = mercury.gravity;
-            infoPlanetScreen = infoMercury;
-            info();
+            mercury.info();
             operation();
-            views();
       break;
       case "Venus":
               weigthResult = venus.weigth;
               gravity = venus.gravity;
-              infoPlanetScreen = infoVenus;
-              info();
+              venus.info();
               operation();
-              views();
       break;
       case "Mars":
               weigthResult = mars.weigth;
               gravity = mars.gravity;
-              infoPlanetScreen = infoMars;
-              info();
+              mars.info();
               operation();
-              views();
       break;
       case "Jupiter":
               weigthResult = jupiter.weigth;
               gravity = jupiter.gravity;
-              infoPlanetScreen = infoJupiter;
-              info();
+              jupiter.info();
               operation();
-              views();
       break;
       case "Saturn":
               weigthResult = saturn.weigth;
               gravity = saturn.gravity;
-              infoPlanetScreen = infoSaturn;
-              info();
+              saturn.info();
               operation();
-              views();
       break;
       case "Uranus":
               weigthResult = uranus.weigth;
               gravity = uranus.gravity;
-              infoPlanetScreen = infoUranus;
-              info();
+              uranus.info();
               operation();
-              views();
       break;
       case "Neptune":
               weigthResult = neptune.weigth;
               gravity = neptune.gravity;
-              infoPlanetScreen = infoNeptune;
-              info();
+              neptune.info();
               operation();
-              views();
       break;
     default:
     result.textContent = "ERROR you just must choose a planet ";
