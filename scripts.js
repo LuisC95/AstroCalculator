@@ -64,7 +64,7 @@ travel.addEventListener ("click", traveling);
 
 astroInput.addEventListener("input", updateValue);
 
-function updateValue(e) // this function takes the range's value that's choosed by the user
+function updateValue(e) // this function takes the range's value that was choosed by the user
 {
   weigthEarth = parseInt(e.target.value);
 
