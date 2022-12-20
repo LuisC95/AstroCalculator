@@ -7,27 +7,6 @@ const uranus = new Planet("Uranus", "url(images/Uranus.jpg)", 24.8, "1.784 milli
 const neptune = new Planet("Neptune", "url(images/Neptune.jpg)", 11.15, "2.793 million miles", "0d 16h 6m", "neptuneInput");
 const earth = new Planet(null, null, 9.8, null, null);
 
-
-var weigthMercury;
-var weigthVenus;
-var weigthEarth;
-var weigthMars;
-var weigthJupiter;
-var weigthSaturn;
-var weigthUranus;
-var weigthNeptune;
-var weigthResult;
-
-var planet;
-var gravity;
-
-var boxMercury = document.getElementById("mercuryInput");
-var boxVenus = document.getElementById("venusInput");
-var boxMars = document.getElementById("marsInput");
-var boxJupiter = document.getElementById("jupiterInput");
-var boxSaturn = document.getElementById("saturnInput");
-var boxUranus = document.getElementById("uranusInput");
-var boxNeptune = document.getElementById("neptuneInput");
 var weigthSelector = document.getElementById("earthWeight");
 var weigthNumber = document.getElementById("weigthNumber");
 var planetInfo = document.getElementById("resultsAndInfo");
@@ -55,7 +34,7 @@ astroInput.addEventListener("input", updateValue);
 
 function updateValue(e) // this function takes the range's value that was choosed by the user
 {
-  weigthEarth = parseInt(e.target.value);
+  earth.weigth = parseInt(e.target.value);
 
   weigthNumber.textContent = e.target.value + " lb.";
   weigthNumber.appendChild(weigthNumberChooser);
@@ -71,7 +50,7 @@ function checkMercury()
   uranusInput.checked = false;
   neptuneInput.checked = false;
 
-  planet = "Mercury";
+  planet = mercury.name;
 }
 function checkVenus()
 {
@@ -82,7 +61,7 @@ function checkVenus()
   uranusInput.checked = false;
   neptuneInput.checked = false;
 
-  planet = "Venus";
+  planet = venus.name;
 }
 function checkMars()
 {
@@ -93,7 +72,7 @@ function checkMars()
   uranusInput.checked = false;
   neptuneInput.checked = false;
 
-  planet = "Mars";
+  planet = mars.name;
 }
 function checkJupiter()
 {
@@ -104,7 +83,7 @@ function checkJupiter()
   uranusInput.checked = false;
   neptuneInput.checked = false;
 
-  planet = "Jupiter";
+  planet = jupiter.name;
 }
 function checkSaturn()
 {
@@ -115,7 +94,7 @@ function checkSaturn()
   uranusInput.checked = false;
   neptuneInput.checked = false;
 
-  planet = "Saturn";
+  planet = saturn.name;
 }
 function checkUranus()
 {
@@ -126,7 +105,7 @@ function checkUranus()
   saturnInput.checked = false;
   neptuneInput.checked = false;
 
-  planet = "Uranus";
+  planet = uranus.name;
 }
 function checkNeptune()
 {
@@ -137,14 +116,14 @@ function checkNeptune()
   saturnInput.checked = false;
   uranusInput.checked = false;
 
-  planet = "Neptune";
+  planet = neptune.name;
 }
 
 function operation()
 { 
   // this function makes the numeric operation of user's weigth with planet's gravity choosed and shows the result on screen
 
-  weigthResult = parseInt((weigthEarth * gravity) / earth.gravity);
+  weigthResult = parseInt((earth.weigth * gravity) / earth.gravity);
   result.textContent = "your weigth on " + planet + " is: " + weigthResult + " lb.";
   showResult.appendChild(result);
 }

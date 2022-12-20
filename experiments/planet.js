@@ -8,6 +8,7 @@ class Planet
         this.distance = distance;
         this.day = day;
         this.box = box;
+        this.check = document.getElementById(this.box); 
     }  
 
     dataPlanet()
