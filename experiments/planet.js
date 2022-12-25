@@ -8,7 +8,9 @@ class Planet
         this.distance = distance;
         this.day = day;
         this.box = box;
-        this.check = document.getElementById(this.box); 
+        this.check = document.getElementById(this.box);
+        this.result = document.createElement("div");
+        this.results;  
     }  
 
     dataPlanet()
@@ -25,4 +27,12 @@ class Planet
 
         planetView.style.backgroundImage = this.image;
     }
+    /**/operation()
+    { 
+    // this function makes the numeric operation of user's weigth with planet's gravity choosed and shows the results on screen
+    this.results = parseInt((earth.weigth * this.gravity) / earth.gravity);
+    result.textContent = "your weigth on " + this.name + " is: " + this.results + " lb.";
+    showResult.appendChild(result);
+    }
+    /**/
 }

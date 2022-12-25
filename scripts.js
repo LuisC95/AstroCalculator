@@ -118,7 +118,7 @@ function checkNeptune()
 
   planet = neptune.name;
 }
-
+/*
 function operation()
 { 
   // this function makes the numeric operation of user's weigth with planet's gravity choosed and shows the result on screen
@@ -127,6 +127,7 @@ function operation()
   result.textContent = "your weigth on " + planet + " is: " + weigthResult + " lb.";
   showResult.appendChild(result);
 }
+*/
 
 
 function traveling()
@@ -138,43 +139,43 @@ function traveling()
             weigthResult = mercury.weigth;
             gravity = mercury.gravity;
             mercury.info();
-            operation();
+            mercury.operation();
       break;
       case "Venus":
               weigthResult = venus.weigth;
               gravity = venus.gravity;
               venus.info();
-              operation();
+              venus.operation();
       break;
       case "Mars":
               weigthResult = mars.weigth;
               gravity = mars.gravity;
               mars.info();
-              operation();
+              mars.operation();
       break;
       case "Jupiter":
               weigthResult = jupiter.weigth;
               gravity = jupiter.gravity;
               jupiter.info();
-              operation();
+              jupiter.operation();
       break;
       case "Saturn":
               weigthResult = saturn.weigth;
               gravity = saturn.gravity;
               saturn.info();
-              operation();
+              saturn.operation();
       break;
       case "Uranus":
               weigthResult = uranus.weigth;
               gravity = uranus.gravity;
               uranus.info();
-              operation();
+              uranus.operation();
       break;
       case "Neptune":
               weigthResult = neptune.weigth;
               gravity = neptune.gravity;
               neptune.info();
-              operation();
+              neptune.operation();
       break;
     default:
     result.textContent = "ERROR you just must choose a planet ";
