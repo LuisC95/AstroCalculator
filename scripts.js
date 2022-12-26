@@ -3,7 +3,7 @@ const venus = new Planet("Venus", "url(images/Venus.jpg)", 8.87, "67.24 million 
 const mars = new Planet("Mars", "url(images/Mars.jpg)", 3.7, "141.6 million miles", "1d 0h 37m", "marsInput");
 const jupiter = new Planet("Jupiter", "url(images/Jupiter.jpg)", 24.8, "483.8 million miles", "0d 9h 56m", "jupiterInput");
 const saturn = new Planet("Saturn", "url(images/Saturn.jpg)", 10.44, "890.8 million miles", "0d 10h 42m", "saturnInput");
-const uranus = new Planet("Uranus", "url(images/Uranus.jpg)", 24.8, "1.784 million miles", "0d 17h 14m", "uranusInput");
+const uranus = new Planet("Uranus", "url(images/Uranus.jpg)", 8.87, "1.784 million miles", "0d 17h 14m", "uranusInput");
 const neptune = new Planet("Neptune", "url(images/Neptune.jpg)", 11.15, "2.793 million miles", "0d 16h 6m", "neptuneInput");
 const earth = new Planet(null, null, 9.8, null, null);
 
@@ -12,7 +12,6 @@ var weigthNumber = document.getElementById("weigthNumber");
 var planetInfo = document.getElementById("resultsAndInfo");
 var planetView = document.getElementById("imagePlanet");
 
-var travel = document.getElementById("ready");
 var result = document.createElement("div");
 var information = document.createElement("div");
 var weigthNumberChooser = document.createElement("div");
@@ -128,60 +127,6 @@ function operation()
   showResult.appendChild(result);
 }
 */
-
-
-function traveling()
-{
-  // this function put's the variables choosed on variables to operate
-  //and shows on screen while get active the other functions created before
-  switch (planet) {
-    case "Mercury":
-            weigthResult = mercury.weigth;
-            gravity = mercury.gravity;
-            mercury.info();
-            mercury.operation();
-      break;
-      case "Venus":
-              weigthResult = venus.weigth;
-              gravity = venus.gravity;
-              venus.info();
-              venus.operation();
-      break;
-      case "Mars":
-              weigthResult = mars.weigth;
-              gravity = mars.gravity;
-              mars.info();
-              mars.operation();
-      break;
-      case "Jupiter":
-              weigthResult = jupiter.weigth;
-              gravity = jupiter.gravity;
-              jupiter.info();
-              jupiter.operation();
-      break;
-      case "Saturn":
-              weigthResult = saturn.weigth;
-              gravity = saturn.gravity;
-              saturn.info();
-              saturn.operation();
-      break;
-      case "Uranus":
-              weigthResult = uranus.weigth;
-              gravity = uranus.gravity;
-              uranus.info();
-              uranus.operation();
-      break;
-      case "Neptune":
-              weigthResult = neptune.weigth;
-              gravity = neptune.gravity;
-              neptune.info();
-              neptune.operation();
-      break;
-    default:
-    result.textContent = "ERROR you just must choose a planet ";
-    document.getElementById('showResult').appendChild(result);
-    }
-  }
 
 for (let e of document.querySelectorAll('input[type="range"].slider-progress'))
 {
