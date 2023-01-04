@@ -7,11 +7,13 @@ const uranus = new Planet("Uranus", "url(images/Uranus.jpg)", 8.87, "1.784 milli
 const neptune = new Planet("Neptune", "url(images/Neptune.jpg)", 11.15, "2.793 million miles", "0d 16h 6m", "neptuneInput");
 const earth = new Planet(null, null, 9.8, null, null);
 
+
 var weigthSelector = document.getElementById("earthWeight");
 var weigthNumber = document.getElementById("weigthNumber");
 var planetInfo = document.getElementById("resultsAndInfo");
 var planetView = document.getElementById("imagePlanet");
 
+var travel = document.getElementById("ready");
 var result = document.createElement("div");
 var information = document.createElement("div");
 var weigthNumberChooser = document.createElement("div");
@@ -38,6 +40,8 @@ function updateValue(e) // this function takes the range's value that was choose
   weigthNumber.textContent = e.target.value + " lb.";
   weigthNumber.appendChild(weigthNumberChooser);
 }
+
+const astronaut = new Astronaut(earth.weigth, );
 
 // check's functions was made it to user's can choose only one planet on screen
 function checkMercury()
@@ -127,7 +131,61 @@ function operation()
   showResult.appendChild(result);
 }
 */
-
+astronaut.start();
+/*
+function traveling()
+{
+  // this function put's the variables choosed on variables to operate
+  //and shows on screen while get active the other functions created before
+  switch (planet) {
+    case "Mercury":
+            weigthResult = mercury.weigth;
+            gravity = mercury.gravity;
+            mercury.info();
+            mercury.operation();
+      break;
+      case "Venus":
+              weigthResult = venus.weigth;
+              gravity = venus.gravity;
+              venus.info();
+              venus.operation();
+      break;
+      case "Mars":
+              weigthResult = mars.weigth;
+              gravity = mars.gravity;
+              mars.info();
+              mars.operation();
+      break;
+      case "Jupiter":
+              weigthResult = jupiter.weigth;
+              gravity = jupiter.gravity;
+              jupiter.info();
+              jupiter.operation();
+      break;
+      case "Saturn":
+              weigthResult = saturn.weigth;
+              gravity = saturn.gravity;
+              saturn.info();
+              saturn.operation();
+      break;
+      case "Uranus":
+              weigthResult = uranus.weigth;
+              gravity = uranus.gravity;
+              uranus.info();
+              uranus.operation();
+      break;
+      case "Neptune":
+              weigthResult = neptune.weigth;
+              gravity = neptune.gravity;
+              neptune.info();
+              neptune.operation();
+      break;
+    default:
+    result.textContent = "ERROR you just must choose a planet ";
+    document.getElementById('showResult').appendChild(result);
+    }
+  }
+  */
 for (let e of document.querySelectorAll('input[type="range"].slider-progress'))
 {
   e.style.setProperty('--value', e.value);
