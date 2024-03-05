@@ -68,7 +68,7 @@ function updateValue(e) // this function takes the range's value that was choose
 {
   weigthEarth = parseInt(e.target.value);
 
-  weigthNumber.textContent = e.target.value + " lb.";
+  weigthNumber.textContent = e.target.value + " pounds";
   weigthNumber.appendChild(weigthNumberChooser);
 }
 
@@ -156,7 +156,7 @@ function operation()
   // this function makes the numeric operation of user's weigth with planet's gravity choosed and shows the result on screen
 
   weigthResult = parseInt((weigthEarth * gravity) / gravityEarth);
-  result.textContent = "your weigth on " + planet + " is: " + weigthResult + " lb.";
+  result.textContent = "your weigth on " + planet + " is: " + weigthResult + " pounds";
   showResult.appendChild(result);
 }
 
@@ -234,7 +234,7 @@ function traveling()
               views();
       break;
     default:
-    result.textContent = "ERROR you just must choose a planet ";
+    result.textContent = "ERROR, you must choose a planet ";
     document.getElementById('showResult').appendChild(result);
     }
   }
